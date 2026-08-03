@@ -39,6 +39,8 @@ function App() {
     );
   }, [completionsByDate]);
 
+  console.log(completionsByDate);
+
   const toggleHabit = (id) => {
     setCompletionsByDate((previousCompletions) => {
       const currentDateCompletions = previousCompletions[selectedDate] || {};
